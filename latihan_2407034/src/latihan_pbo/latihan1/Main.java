@@ -41,7 +41,7 @@ public class Main {
 
 
         // System.out.println("=======CAFE 1=======");
-        Cafe cafe1 = new Cafe("Kenangan", "Indramayu");
+        // Cafe cafe1 = new Cafe("Kenangan", "Indramayu");
         // cafe1.nama = "Kopi Kenangan";
         // cafe1.alamat = "Indramayu";
         // System.out.println("Nama Cafe :" + cafe1.nama);
