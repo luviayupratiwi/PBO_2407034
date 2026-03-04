@@ -40,57 +40,92 @@ package latihan_pbo.latihan2;
 //     }
 // }
 
-// 
+// class PersegiPanjang{
+//     private int luas;
+//     private int keliling;
 
-class PersegiPanjang {
+//     void tampil() {
+//     }
 
-    // atribut (dibuat private)
-    private int panjang;
-    private int lebar;
+//     public int getLuas() {
+//         return luas;
+//     }
 
-    // setter panjang
-    public void setPanjang(int panjang) {
-        this.panjang = panjang;
-    }
+//     public void setLuas(int luas) {
+//         this.luas = luas;
+//     }
 
-    // getter panjang
-    public int getPanjang() {
-        return panjang;
-    }
+//     public int getKeliling() {
+//         return keliling;
+//     }
 
-    // setter lebar
-    public void setLebar(int lebar) {
-        this.lebar = lebar;
-    }
+//     public void setKeliling(int keliling) {
+//         this.keliling = keliling;
+//     }
 
-    // getter lebar
-    public int getLebar() {
-        return lebar;
-    }
+// }
 
-    // method tambahan (biar lebih lengkap)
-    public int hitungLuas() {
-        return panjang * lebar;
-    }
 
-    // method menghitung keliling
-    public int hitungKeliling() {
-        return 2 * (panjang + lebar);
-    }
-}
+// public class Main {
+//     public static void main(String[] args) {
+//         PersegiPanjang p = new PersegiPanjang();
+//         p.setLuas(20);
+//         p.setKeliling(25);
+//         System.out.println(p.getLuas());
+//         System.out.println(p.getKeliling());
 
-public class Main {
+//     }
+// }
 
-    public static void main(String[] args) {
+// class PersegiPanjang {
 
-        PersegiPanjang pp = new PersegiPanjang();
+//     // atribut (dibuat private)
+//     private int panjang;
+//     private int lebar;
 
-        pp.setPanjang(10);
-        pp.setLebar(5);
+//     // setter panjang
+//     public void setPanjang(int panjang) {
+//         this.panjang = panjang;
+//     }
 
-        System.out.println("Panjang : " + pp.getPanjang());
-        System.out.println("Lebar   : " + pp.getLebar());
-        System.out.println("Luas    : " + pp.hitungLuas());
-        System.out.println("Keliling  : " + pp.hitungKeliling());
-    }
-}
+//     // getter panjang
+//     public int getPanjang() {
+//         return panjang;
+//     }
+
+//     // setter lebar
+//     public void setLebar(int lebar) {
+//         this.lebar = lebar;
+//     }
+
+//     // getter lebar
+//     public int getLebar() {
+//         return lebar;
+//     }
+
+//     // method tambahan (biar lebih lengkap)
+//     public int hitungLuas() {
+//         return panjang * lebar;
+//     }
+
+//     // method menghitung keliling
+//     public int hitungKeliling() {
+//         return 2 * (panjang + lebar);
+//     }
+// }
+
+// public class Main {
+
+//     public static void main(String[] args) {
+
+//         PersegiPanjang pp = new PersegiPanjang();
+
+//         pp.setPanjang(10);
+//         pp.setLebar(5);
+
+//         System.out.println("Panjang : " + pp.getPanjang());
+//         System.out.println("Lebar   : " + pp.getLebar());
+//         System.out.println("Luas    : " + pp.hitungLuas());
+//         System.out.println("Keliling  : " + pp.hitungKeliling());
+//     }
+// }

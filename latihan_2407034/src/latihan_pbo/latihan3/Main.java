@@ -1,0 +1,22 @@
+package latihan_pbo.latihan3;
+
+public class Main {
+    
+    public static void main(String[] args) {
+        persegi p = new persegi();
+        PersegiPanjang pp = new PersegiPanjang();
+        segitiga ppp = new segitiga();
+        lingkaran pppp = new lingkaran();
+
+        p.setSisi(5);
+        pp.setPanjang(7);
+        pp.setLebar(6);
+        ppp.setAlas(3);
+        ppp.setTinggi(8);
+        pppp.setJari(8);
+        System.out.println("Luas Persegi=" + p.LuasPersegi());
+        System.out.println("Luas Persegi Panjang=" + pp.LuasPersegiPanjang());
+        System.out.println("Luas Segitiga=" + ppp.Luassegitiga());
+        System.out.println("Luas Lingkaran=" + pppp.LuasLingkaran());
+    }
+}

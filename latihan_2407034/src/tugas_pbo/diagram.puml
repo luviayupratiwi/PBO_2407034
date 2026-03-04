@@ -1,0 +1,59 @@
+package tugas_pbo;
+
+@startuml
+
+package tugas_pbo {
+
+abstract class BangunDatar {
+    # tampilInfo(nama : String) : void
+    + luas() : double
+    + keliling() : double
+}
+
+class Persegi {
+    - sisi : double
+    + Persegi(sisi : double)
+    + luas() : double
+    + keliling() : double
+}
+
+class PersegiPanjang {
+    - panjang : double
+    - lebar : double
+    + PersegiPanjang(panjang : double, lebar : double)
+    + luas() : double
+    + keliling() : double
+}
+
+class Segitiga {
+    - alas : double
+    - tinggi : double
+    - s1 : double
+    - s2 : double
+    - s3 : double
+    + Segitiga(alas : double, tinggi : double, s1 : double, s2 : double, s3 : double)
+    + luas() : double
+    + keliling() : double
+}
+
+class Lingkaran {
+    - jariJari : double
+    + Lingkaran(jariJari : double)
+    + luas() : double
+    + keliling() : double
+}
+
+class tugas2_2407070 {
+    + main(args : String[]) : void
+}
+
+BangunDatar <|-- Persegi
+BangunDatar <|-- PersegiPanjang
+BangunDatar <|-- Segitiga
+BangunDatar <|-- Lingkaran
+
+tugas2_2407070 --> BangunDatar
+
+}
+
+@enduml
