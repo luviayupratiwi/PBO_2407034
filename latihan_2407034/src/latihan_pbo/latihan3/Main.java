@@ -15,8 +15,12 @@ public class Main {
         ppp.setTinggi(8);
         pppp.setJari(8);
         System.out.println("Luas Persegi=" + p.LuasPersegi());
+        System.out.println("Keliling Persegi=" + p.KelilingPersegi());
         System.out.println("Luas Persegi Panjang=" + pp.LuasPersegiPanjang());
+        System.out.println("Keliling Persegi Panjang=" + pp.KelilingPersegiPanjang());
         System.out.println("Luas Segitiga=" + ppp.Luassegitiga());
+        System.out.println("Keliling Segitiga=" + ppp.KelilingSegitiga());
         System.out.println("Luas Lingkaran=" + pppp.LuasLingkaran());
+        System.out.println("Keliling Lingkaran=" + pppp.KelilingLingkaran());
     }
 }
