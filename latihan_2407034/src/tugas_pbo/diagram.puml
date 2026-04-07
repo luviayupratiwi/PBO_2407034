@@ -43,7 +43,7 @@ class Lingkaran {
     + keliling() : double
 }
 
-class tugas2_2407070 {
+class tugas2_2407034 {
     + main(args : String[]) : void
 }
 
@@ -52,7 +52,7 @@ BangunDatar <|-- PersegiPanjang
 BangunDatar <|-- Segitiga
 BangunDatar <|-- Lingkaran
 
-tugas2_2407070 --> BangunDatar
+tugas2_2407034 --> BangunDatar
 
 }
 
