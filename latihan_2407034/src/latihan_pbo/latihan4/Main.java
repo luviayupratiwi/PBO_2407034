@@ -2,15 +2,12 @@ package latihan_pbo.latihan4;
 
 public class Main {
     public static void main(String[] args) {
-        int panjang = 10;
-        int lebar = 5;
-        int tinggi = 4;
+        BangunRuang balok = new BangunRuang(10, 5, 4);
 
-        // objek
-        BangunRuang br = new BangunRuang(panjang, lebar, tinggi);
+        balok.tampilkanInfoRuang();
 
-        // output
-        System.out.println("Luas Alas = " + br.hitungLuas());
-        System.out.println("Volume = " + br.hitungVolume());
+        System.out.println("Luas Alas: " + balok.hitungLuas());
+        System.out.println("Volume dari class parent: " + balok.hitungVolume());
+        System.out.println("Volume dari class child: " + balok.hitungVolume2());
     }
 }

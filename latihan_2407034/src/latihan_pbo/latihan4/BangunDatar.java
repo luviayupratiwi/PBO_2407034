@@ -2,26 +2,26 @@ package latihan_pbo.latihan4;
 
 public class BangunDatar {
     // atribut (enkapsulasi)
-    private int panjang;
-    private int lebar;
+    protected double panjang;
+    protected double lebar;
 
     // constructor
-    public BangunDatar(int panjang, int lebar) {
+    public BangunDatar(double panjang, double lebar) {
         this.panjang = panjang;
         this.lebar = lebar;
     }
 
     // getter
-    public int getPanjang() {
-        return panjang;
-    }
+    // public int getPanjang() {
+    //     return panjang;
+    // }
 
-    public int getLebar() {
-        return lebar;
-    }
+    // public int getLebar() {
+    //     return lebar;
+    // }
 
     // method hitung luas
-    public int hitungLuas() {
+    public double hitungLuas() {
         return panjang * lebar;
     }
 }
