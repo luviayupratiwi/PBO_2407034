@@ -24,6 +24,10 @@ class Menu {
         return nama;
     }
 
+    public void setNama(String nama) {
+    this.nama = nama;
+    }
+
     public double getHarga() {
         return harga;
     }

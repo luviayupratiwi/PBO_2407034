@@ -7,13 +7,20 @@ public class Main {
 
         Scanner input = new Scanner(System.in);
 
-        Cafe cafe = new Cafe("CAFE ALA");
+        Cafe cafe = new Cafe("CAFE KELOMPOK 1");
 
         // Tambah menu
-        cafe.tambahMenu(new Makanan("Nasi Goreng", 15000, "Berat"));
-        cafe.tambahMenu(new Makanan("Mie Ayam", 12000, "Berat"));
-        cafe.tambahMenu(new Minuman("Es Teh", 5000, "Dingin"));
-        cafe.tambahMenu(new Minuman("Kopi", 8000, "Panas"));
+        cafe.tambahMenu(new Makanan("Nasi Goreng", 15000, "Makanan Berat"));
+        cafe.tambahMenu(new Makanan("Mie Ayam", 12000, "Makanan Berat"));
+        cafe.tambahMenu(new Makanan("Kentang Goreng", 10000, "Snack"));
+        cafe.tambahMenu(new Makanan("Roti Bakar", 8000, "Snack"));
+        cafe.tambahMenu(new Makanan("Cheese Cake", 15000, "Dessert"));
+
+        cafe.tambahMenu(new Minuman("Es Teh", 5000, "Medium"));
+        cafe.tambahMenu(new Minuman("Es Doger", 8000, "Medium"));
+        cafe.tambahMenu(new Minuman("Kopi Susu", 12000, "Large"));
+        cafe.tambahMenu(new Minuman("Matcha Latte", 15000, "Large"));
+        cafe.tambahMenu(new Minuman("Jus Jeruk", 10000, "Small"));
 
         int qty;
         double subtotal;
@@ -28,7 +35,7 @@ public class Main {
             cafe.tampilkanMenu();
 
             System.out.println("0. Selesai");
-            System.out.print("Pilih menu (contoh: 1,3) : ");
+            System.out.print("Pilih menu: ");
             String pilih = input.next();
 
             if (pilih.equals("0")) {
@@ -75,9 +82,9 @@ public class Main {
         double diskon = 0;
 
         if (total >= 50000) {
-            diskon = total * 0.10;
+            diskon = total * 0.08;
         } else if (total >= 30000) {
-            diskon = total * 0.10;
+            diskon = total * 0.04;
         }
 
         // Total akhir
@@ -91,7 +98,7 @@ public class Main {
         System.out.println("-------------------------------");
         System.out.println("Total Bayar   : Rp" + totalBayar);
 
-        System.out.println("\nTerima kasih sudah memesan ☕");
+        System.out.println("\nTerima kasih sudah memesan");
 
         input.close();
     }

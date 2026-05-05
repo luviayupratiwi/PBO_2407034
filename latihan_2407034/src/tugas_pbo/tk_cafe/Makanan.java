@@ -7,7 +7,14 @@ class Makanan extends Menu {
         super(nama, harga);
         this.jenis = jenis;
     }
+    
+    public String getJenis() {
+    return jenis;
+}
 
+public void setJenis(String jenis) {
+    this.jenis = jenis;
+}
     // Override
     @Override
     public void detailMenu() {

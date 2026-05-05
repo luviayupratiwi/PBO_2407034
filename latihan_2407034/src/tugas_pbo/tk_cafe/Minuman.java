@@ -8,6 +8,14 @@ class Minuman extends Menu {
         this.ukuran = ukuran;
     }
 
+    public String getUkuran() {
+    return ukuran;
+}
+
+public void setUkuran(String ukuran) {
+    this.ukuran = ukuran;
+}
+
     // Override
     @Override
     public void detailMenu() {
